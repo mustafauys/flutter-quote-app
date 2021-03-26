@@ -1,5 +1,7 @@
 # Quotes Application - Flutter UI
 
+It is an application to study the words of famous authors and thinkers.
+
 ## Screens
 
 ![onescreen](https://user-images.githubusercontent.com/51384613/111083047-9167a780-851c-11eb-8786-e33f040d9e55.jpg)
