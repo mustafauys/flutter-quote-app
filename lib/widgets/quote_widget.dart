@@ -3,11 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 
 // ignore: must_be_immutable
 class QuoteWidget extends StatelessWidget {
-  var quote = "";
-  var author = "";
-  var onShareClick;
-  var onLikeClick;
-  var bgColor;
+  final quote;
+  final author;
+  final onShareClick;
+  final onLikeClick;
+  final bgColor;
 
   QuoteWidget(
       {this.bgColor,
