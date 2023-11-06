@@ -34,12 +34,12 @@ class _HomePageState extends State<HomePage> {
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.done) {
               if (snapshot.hasError) {
-                return ErrorWidget(snapshot.error);
+                return ErrorWidget(snapshot.error!);
               }
               return PageView.builder(
-                  itemCount: snapshot.data.length,
+                  itemCount: snapshot.data?.length,
                   itemBuilder: (context, index) {
-                    var model = snapshot.data[index];
+                    var model = snapshot.data?[index];
                     return QuoteWidget(
                       quote: model["text"].toString(),
                       author: model["author"].toString(),

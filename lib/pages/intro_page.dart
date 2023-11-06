@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutterquote/widgets/color_constants.dart';
+import 'package:flutterquote/widgets/enum.dart';
+import 'package:flutterquote/widgets/large_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'login_page.dart';
@@ -40,15 +43,17 @@ class IntroPage extends StatelessWidget {
             Spacer(),
             SizedBox(
               width: double.infinity,
-              // ignore: deprecated_member_use
-              child: RaisedButton(
+              child: LargeButton(
+                buttonSize: ButtonSize.large,
+                borderColor: ColorConstants.cameo,
+                radius: 10,
+                isOutlined: false,
+                style: TextStyle(color: ColorConstants.cameo),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => LoginPage()));
                 },
-                color: Colors.black,
-                textColor: Colors.white,
-                child: Text("Let's Go"),
+                text: "Let's Go",
               ),
             ),
             Spacer(),

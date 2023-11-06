@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterquote/pages/home_page.dart';
+import 'package:flutterquote/widgets/color_constants.dart';
+import 'package:flutterquote/widgets/custom_textfield.dart';
+import 'package:flutterquote/widgets/enum.dart';
+import 'package:flutterquote/widgets/large_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -12,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
+      backgroundColor: ColorConstants.sinbad,
       body: Container(
         margin: EdgeInsets.symmetric(horizontal: 20),
         child: Column(
@@ -24,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
             RichText(
               text: TextSpan(
                 style: GoogleFonts.lato(
-                  textStyle: TextStyle(color: Colors.black),
+                  textStyle: TextStyle(color: ColorConstants.black),
                 ),
                 children: [
                   TextSpan(text: "Hello,\n", style: TextStyle(fontSize: 16)),
@@ -37,21 +40,26 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(
               height: 30,
             ),
-            TextField(
-              decoration: InputDecoration(labelText: "Telephone Number"),
+            CustomTextField(
+              context: context,
+              hintText: 'Telephone Number',
+              isOutlined: true,
+              borderColor: ColorConstants.sinbad,
             ),
             Spacer(),
             SizedBox(
               width: double.infinity,
-              // ignore: deprecated_member_use
-              child: RaisedButton(
+              child: LargeButton(
+                buttonSize: ButtonSize.large,
+                borderColor: ColorConstants.eastBay,
+                radius: 10,
+                isOutlined: false,
+                style: TextStyle(color: ColorConstants.eastBay),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => HomePage()));
                 },
-                color: Colors.orange,
-                textColor: Colors.white,
-                child: Text("Let's Go"),
+                text: "Let's Move On To The Words",
               ),
             ),
             Spacer(),

@@ -1,6 +1,6 @@
 class QuoteModel {
-  String text;
-  String author;
+  String? text;
+  String? author;
 
   QuoteModel({this.text, this.author});
 
