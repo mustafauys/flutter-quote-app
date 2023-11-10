@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterquote/pages/home_page.dart';
 import 'package:flutterquote/widgets/color_constants.dart';
-import 'package:flutterquote/widgets/custom_textfield.dart';
 import 'package:flutterquote/widgets/enum.dart';
 import 'package:flutterquote/widgets/large_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,53 +15,42 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstants.sinbad,
-      body: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Spacer(
-              flex: 3,
-            ),
             RichText(
               text: TextSpan(
                 style: GoogleFonts.lato(
                   textStyle: TextStyle(color: ColorConstants.black),
                 ),
                 children: [
-                  TextSpan(text: "Hello,\n", style: TextStyle(fontSize: 16)),
+                  TextSpan(text: "Hello,\n", style: TextStyle(fontSize: 25)),
                   TextSpan(
                       text: "Welcome to the World of Quotes!",
-                      style: TextStyle(fontSize: 25)),
+                      style: TextStyle(fontSize: 30)),
                 ],
               ),
             ),
-            SizedBox(
-              height: 30,
-            ),
-            CustomTextField(
-              context: context,
-              hintText: 'Telephone Number',
-              isOutlined: true,
-              borderColor: ColorConstants.sinbad,
-            ),
-            Spacer(),
-            SizedBox(
-              width: double.infinity,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: LargeButton(
                 buttonSize: ButtonSize.large,
                 borderColor: ColorConstants.eastBay,
                 radius: 10,
+                elevation: 20,
+                backgroundColor: ColorConstants.steelGray,
                 isOutlined: false,
-                style: TextStyle(color: ColorConstants.eastBay),
+                style: TextStyle(color: ColorConstants.white),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => HomePage()));
                 },
-                text: "Let's Move On To The Words",
+                text: "Let's get started !",
               ),
             ),
-            Spacer(),
           ],
         ),
       ),
