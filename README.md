@@ -4,7 +4,6 @@ It is an application to study the words of famous authors and thinkers.
 
 ## Screens
 
-![1](https://user-images.githubusercontent.com/51384613/158024406-7cbd2f20-cf55-443c-9674-f32882b6f601.jpg)
-![2](https://user-images.githubusercontent.com/51384613/158024407-ba1fe5fe-44d6-4e05-8482-56063f18d8bf.jpg)
-![4](https://user-images.githubusercontent.com/51384613/158024412-0f9a700d-0e8a-48f0-ae9a-438e94645276.jpg)
-
+![Screenshot_1699656673](https://github.com/mustafauys/flutter-quote-app/assets/51384613/9e847241-830f-4ab8-98ed-560f98ae43ae)
+![Screenshot_1699656676](https://github.com/mustafauys/flutter-quote-app/assets/51384613/f4223651-cc45-4db0-9283-5bf65f244c61)
+![Screenshot_1699656686](https://github.com/mustafauys/flutter-quote-app/assets/51384613/918e0f37-21af-4e76-b54c-1298ebcb160b)
