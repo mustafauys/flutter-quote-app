@@ -3,7 +3,6 @@ import 'package:flutterquote/widgets/color_constants.dart';
 import 'package:flutterquote/widgets/enum.dart';
 import 'package:flutterquote/widgets/large_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'login_page.dart';
 
 class IntroPage extends StatelessWidget {
@@ -12,20 +11,17 @@ class IntroPage extends StatelessWidget {
     double height = 40;
     double width = 40;
     return Scaffold(
-      backgroundColor: Colors.brown,
-      body: Container(
-        margin: EdgeInsets.only(left: 20, right: 20),
+      backgroundColor: ColorConstants.cameo,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Spacer(),
             Image.asset(
               "assets/quote.png",
               height: height,
               width: width,
-            ),
-            SizedBox(
-              height: 50,
             ),
             RichText(
               text: TextSpan(
@@ -40,13 +36,14 @@ class IntroPage extends StatelessWidget {
                 ],
               ),
             ),
-            Spacer(),
-            SizedBox(
-              width: double.infinity,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: LargeButton(
                 buttonSize: ButtonSize.large,
                 borderColor: ColorConstants.cameo,
                 radius: 10,
+                elevation: 20,
+                backgroundColor: ColorConstants.black,
                 isOutlined: false,
                 style: TextStyle(color: ColorConstants.cameo),
                 onPressed: () {
@@ -56,7 +53,6 @@ class IntroPage extends StatelessWidget {
                 text: "Let's Go",
               ),
             ),
-            Spacer(),
           ],
         ),
       ),

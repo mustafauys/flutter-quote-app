@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutterquote/widgets/quote_widget.dart';
 import 'package:http/http.dart' as http;
