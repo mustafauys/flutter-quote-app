@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutterquote/widgets/color_constants.dart';
-import 'package:flutterquote/widgets/context_extension.dart';
+import 'package:flutterquote/core/constants/color_constants.dart';
+import 'package:flutterquote/core/extensions/context_extension.dart';
 
 class CustomTextField extends StatefulWidget {
   const CustomTextField({

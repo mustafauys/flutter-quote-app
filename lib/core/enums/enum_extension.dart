@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutterquote/widgets/app_enum.dart';
-import 'package:flutterquote/widgets/enum.dart';
-import 'package:flutterquote/widgets/widgets_constants.dart';
+import 'package:flutterquote/core/enums/app_enum.dart';
+import 'package:flutterquote/core/enums/enum.dart';
+import 'package:flutterquote/core/constants/widgets_constants.dart';
 
 extension AppPlatformExtension on AppPlatform {
   AppPlatform get appPlatform {

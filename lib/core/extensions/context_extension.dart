@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterquote/widgets/app_enum.dart';
+import 'package:flutterquote/core/enums/app_enum.dart';
 import '../theme/base/base_theme.dart';
 import '../theme/viewmodel/theme_viewmodel.dart';
 

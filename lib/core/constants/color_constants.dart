@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class ColorConstants {
   static const Color primaryColor = Color(0xFF00A9CE);
   static const Color secondaryColor = Color(0xFFFFC72C);
-
   static const Color white = Color(0xFFffffff);
   static const Color icyLilac = Color(0xFFe4e9f7);
   static const Color drWhite = Color(0xFFfafafa);
@@ -19,11 +18,9 @@ class ColorConstants {
   static const Color gallery = Color(0xfff0f0f0);
   static const Color yuchisoft = Color(0xffE76E2D);
   static const Color pickledBlueWood = Color(0xff344757);
-
   static const Color eastBay = Color(0xff454184);
   static const Color haveLockBlue = Color(0xff6790de);
   static const Color sinbad = Color(0xff9ecdca);
-
   static const Color cameo = Color(0xffdbad93);
   static const Color newYorkPink = Color(0xffd0717e);
   static const Color coralTree = Color(0xffa5697f);
@@ -33,7 +30,6 @@ class ColorConstants {
   static const Color turbo = Color(0xfff4e300);
   static const Color riptide = Color(0xff87e4e5);
   static const Color downy = Color(0xff66cbcd);
-
   static const Color royalBlue = Color(0xff3b5ae9);
   static const Color sushi = Color(0xff7cb832);
   static const Color koromiko = Color(0xfffdbb5b);

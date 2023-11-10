@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutterquote/pages/home_page.dart';
-import 'package:flutterquote/widgets/color_constants.dart';
-import 'package:flutterquote/widgets/enum.dart';
-import 'package:flutterquote/widgets/large_button_widget.dart';
+import 'package:flutterquote/app/pages/home_page.dart';
+import 'package:flutterquote/core/constants/color_constants.dart';
+import 'package:flutterquote/core/enums/enum.dart';
+import 'package:flutterquote/core/widgets/large_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {

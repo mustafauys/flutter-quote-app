@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutterquote/widgets/color_constants.dart';
-import 'package:flutterquote/widgets/enum.dart';
-import 'package:flutterquote/widgets/enum_extension.dart';
+import 'package:flutterquote/core/constants/color_constants.dart';
+import 'package:flutterquote/core/enums/enum.dart';
+import 'package:flutterquote/core/enums/enum_extension.dart';
 
 class LargeButton extends StatelessWidget {
   final Key? buttonKey;
